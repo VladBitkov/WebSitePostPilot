@@ -75,10 +75,10 @@ var sponsorsSwiper = new Swiper(".sponsors__swiper", {
     clickable: true,
     renderBullet: function (index, className) {
       var logoImages = [
-        "../img/obvi-swiper.svg",
-        "../img/bulletproof-swiper.svg",
-        "../img/boom-swiper.svg",
-        "../img/orbit-baby-swiper.svg",
+        "img/obvi-swiper.svg",
+        "img/bulletproof-swiper.svg",
+        "img/boom-swiper.svg",
+        "img/orbit-baby-swiper.svg",
       ];
       return (
         '<div class="' +
