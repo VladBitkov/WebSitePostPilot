@@ -725,17 +725,31 @@ button:not(.menu-btn):hover {
   direction: rtl;
   text-align: end;
   padding-left: 81px; /*placing scrollbar */
+
+  /* display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 400ms ease; */
+  transition: max-height 200ms ease;
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 .introduction__swiper-slide__subtitle--open {
   overflow-y: scroll;
   display: inline-block;
-  animation: fadeInDown 30ms;
-  -webkit-animation: fadeInDown 30ms;
-  height: 105px;
+  /* animation: fadeInDown 30ms; */
+  /* -webkit-animation: fadeInDown 30ms; */
+
+  max-height: 105px;
+  visibility: visible;
+
   scrollbar-width: 4px;
   scrollbar-color: #a0cdcd #2e2f35;
   scroll-behavior: smooth;
   position: relative;
+
+  /* grid-template-rows: 1fr; */
 }
 .introduction__swiper-slide__subtitle::-webkit-scrollbar-track {
   background-color: #a0cdcd; /* Цвет трека скроллбара */
