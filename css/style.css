@@ -386,8 +386,9 @@ button:not(.menu-btn):hover {
   animation: fadeInLeft 1.4s;
   -webkit-animation: fadeInLeft 1.4s;
   display: flex;
+  flex-wrap: wrap;
   /* gap: 65px; */
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .brands__list-item {
@@ -683,7 +684,7 @@ button:not(.menu-btn):hover {
 }
 
 .introduction__swiper {
-  height: 450px;
+  /* height: fit-content; */
   display: flex;
   flex-direction: column;
   width: fit-content;
